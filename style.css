@@ -56,7 +56,7 @@ main > a > h1 {
 }
 
 main > a > h1:hover {
-  transition-delay: 0.2s;
+  transition: 0.3s;
   border: 2px solid red;
   color: red;
 }
@@ -64,10 +64,27 @@ main > a > h1:hover {
 footer {
   height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
+#footer_right {
+  display: flex;
+  align-items: center;
+}
+#footer_right a:hover {
+  border: 1px solid grey;
+  height: 30px;
+}
+
+#footer_right a:active {
+  border: 1px solid blue;
+}
+
+.developers {
+  font-size: 10px;
+}
 #background-video {
   width: 100vw;
   height: 100vh;
@@ -78,4 +95,54 @@ footer {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+/* Galery */
+
+#Galery_Section {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); */
+  transition: 0.2s;
+  width: 300px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+figure:hover {
+  box-shadow: 0 8px 8px 0 rgba(255, 255, 255, 0.3);
+  width: 350px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+figcaption {
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 340;
+  color: lightgray;
+}
+
+figcaption:hover {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+  }
+  .nav-left > a {
+    display: block;
+  }
 }
