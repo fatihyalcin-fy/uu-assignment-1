@@ -175,7 +175,7 @@ header {
   z-index: 20;
 }
 
-header a:active {
+header .navigation a:active {
   color: #724849;
 }
 
