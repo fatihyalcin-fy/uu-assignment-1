@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Special Elite", cursive;
 }
 
 body {
@@ -72,6 +72,7 @@ footer {
 #footer_right {
   display: flex;
   align-items: center;
+  width: 80px;
 }
 #footer_right a:hover {
   border: 1px solid grey;

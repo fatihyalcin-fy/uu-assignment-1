@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Special Elite", cursive;
 }
 
 .banner {
   width: 100%;
   height: 20rem;
-  background-image: url("./banner.jpg");
+  background-image: url("./images/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 7rem;
@@ -83,7 +84,7 @@ table img {
 }
 
 .cast {
-  background-image: url("./bg-img.jpg");
+  background-image: url("./images/bg-img.jpg");
   margin-top: 2rem;
   padding: 4rem;
 }
