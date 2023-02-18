@@ -108,8 +108,45 @@ table img {
   line-height: 2rem;
   padding-right: 3rem;
   padding-top: 5rem;
+  color: #75838c;
 }
 
 .cast_right h2 {
   padding-bottom: 1.5rem;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+  }
+  .nav-left > a {
+    display: block;
+  }
+
+  .cast_entry {
+    display: block;
+    align-items: flex-start;
+    font-family: Montserrat;
+    padding: 0rem;
+  }
+
+  .cast_left img {
+    width: 350px;
+    padding-top: 2rem;
+    padding-right: 0rem;
+    padding-left: 1.5rem;
+  }
+  .cast_left {
+    padding: 0rem;
+  }
+
+  .cast_right {
+    text-align: justify;
+    line-height: 2rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-left: 1rem;
+    color: #75838c;
+  }
 }
