@@ -196,14 +196,12 @@ table img {
   text-align: center;
   font-weight: 900;
   font-size: 1.5rem;
-  font-family: Montserrat;
   text-decoration: underline red;
   padding: 1rem;
 }
 
 .cast h2 {
   text-align: center;
-  font-family: Montserrat;
   font-weight: 300;
   font-size: 4rem;
   padding: 2rem;
@@ -245,13 +243,6 @@ footer {
 /* Responsive */
 
 @media screen and (max-width: 600px) {
-  nav {
-    display: block;
-  }
-  .nav-left > a {
-    display: block;
-  }
-
   .cast_entry {
     display: block;
     align-items: flex-start;
@@ -276,5 +267,35 @@ footer {
     padding-top: 4rem;
     padding-left: 1rem;
     color: #75838c;
+  }
+
+  .nav-bar {
+    margin: 0px;
+  }
+
+  header nav a {
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .action {
+    display: none;
+  }
+
+  .logo a img {
+    display: flex;
+    width: 100px;
+  }
+
+  .navigation {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+  }
+
+  .logo {
+    width: 30%;
   }
 }

@@ -119,11 +119,38 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  nav {
-    display: block;
+  .nav-bar {
+    margin: 0px;
   }
-  .nav-left > a {
-    display: block;
+
+  header nav a {
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .action {
+    display: none;
+  }
+
+  .logo a img {
+    display: flex;
+    width: 100px;
+  }
+
+  .navigation {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  main img {
+    width: 250px;
   }
 }
 
