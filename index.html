@@ -4,23 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
     <title>Home / Mission Impossible</title>
     <link
@@ -28,23 +11,50 @@
       href="https://dx35vtwkllhj9.cloudfront.net/paramountpictures/mission-impossible-7/images/favicon.ico?v=1676057003455"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav>
-      <div id="nav_right"><a href="#">Home</a></div>
-      <div class="nav_left">
-        <a href="cast.html">Cast</a>
-        <a href="./series.html">Series</a>
-        <a href="./galery.html">Galery</a>
-        <a href="#">Contact</a>
-      </div>
-    </nav>
+    <div class="nav-bar">
+      <header>
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Mission_Impossible_Rogue_Nation_Logo.png"
+              alt=""
+              width="180px"
+          /></a>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <a href="./index.html"> <li>Home</li> </a
+            ><a href="./cast.html"> <li>Cast</li> </a
+            ><a href="./series.html"> <li>Series</li> </a
+            ><a href="./galery.html"> <li>Gallery</li> </a
+            ><a href="#">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </nav>
+        <div class="action">
+          <a
+            href="https://www.bol.com/nl/nl/p/mission-impossible-the-5-movie-collection/9300000043299885/?Referrer="
+            target="_blank"
+            >Buy DVD</a
+          >
+        </div>
+      </header>
+    </div>
 
     <!-- Bacground Video -->
     <video
       id="background-video"
-      src="./assets/mi_thriller.mp4"
+      src="./assets/m-i-v.mp4"
       autoplay
       loop
       muted
@@ -52,17 +62,31 @@
     >
       <p>
         Your browser doesn't support HTML video. Here is a
-        <a href="./assets/mi_thriller.mp4">link to the video</a> instead.
+        <a href="./assets/m-i-v.mp4">link to the video</a> instead.
       </p>
     </video>
 
     <!-- Main Section -->
     <main>
-      <a href="./series.html">
-        <h1>Mission Impossible</h1>
-      </a>
+      <img
+        src="https://dx35vtwkllhj9.cloudfront.net/paramountpictures/mission-impossible-7/images/regions/us/tt.png"
+        alt=""
+        width="600px"
+      />
     </main>
 
     <!-- Footer to be: add footer content-->
+
+    <footer>
+      <div id="footer_left">
+        <p class="developers">Developed by Fatih - Eyup - Mark</p>
+      </div>
+      <div id="footer_middle">
+        <p>&copy 2023</p>
+      </div>
+      <div id="footer_right">
+        <p>UU Assignment I</p>
+      </div>
+    </footer>
   </body>
 </html>
