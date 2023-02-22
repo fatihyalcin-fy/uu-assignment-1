@@ -4,22 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Home / Mission Impossible</title>
-    <link
-      rel="shortcut icon"
-      href="https://dx35vtwkllhj9.cloudfront.net/paramountpictures/mission-impossible-7/images/favicon.ico?v=1676057003455"
-      type="image/x-icon"
-    />
+    <title>Mission Impossible</title>
+    <link rel="stylesheet" href="contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="https://dx35vtwkllhj9.cloudfront.net/paramountpictures/mission-impossible-7/images/favicon.ico?v=1676057003455"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <!-- Navigation Bar -->
     <div class="nav-bar">
       <header>
         <div class="logo">
@@ -50,43 +49,23 @@
         </div>
       </header>
     </div>
-
-    <!-- Bacground Video -->
-    <video
-      id="background-video"
-      src="./assets/m-i-v.mp4"
-      autoplay
-      loop
-      muted
-      preload="auto"
-    >
-      <p>
-        Your browser doesn't support HTML video. Here is a
-        <a href="./assets/m-i-v.mp4">link to the video</a> instead.
-      </p>
-    </video>
-
-    <!-- Main Section -->
     <main>
-      <img
-        src="https://dx35vtwkllhj9.cloudfront.net/paramountpictures/mission-impossible-7/images/regions/us/tt.png"
-        alt=""
-        width="600px"
-      />
+      <div class="banner">
+        <div class="banner_overlay">
+          <h2>Contact us</h2>
+        </div>
+      </div>
     </main>
-
-    <!-- Footer to be: add footer content-->
-
-    <footer>
-      <div id="footer_left">
-        <p class="developers">Developed by Fatih - Eyup - Mark</p>
-      </div>
-      <div id="footer_middle">
-        <p>&copy 2023</p>
-      </div>
-      <div id="footer_right">
-        <p>UU Assignment I</p>
-      </div>
-    </footer>
+    <section id="Contact_Form">
+           <form >
+            <label for="name">Name:</label><br>
+            <input type = "text" id = "name" name="name" placeholder="name"><br>
+            <label for="email">Email adress:</label><br>
+            <input type = "email" id = "email" name="email" placeholder="example@gmail.com"><br>
+            <label for="name">Additional remarks:</label><br>
+            <input type = "textarea" id = "text" name="text" placeholder="Add any additional remarks"><br>
+            <input type = "button" value="Submit">
+           </form> 
+      </section>
   </body>
 </html>
