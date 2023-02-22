@@ -226,6 +226,8 @@ footer {
 #footer_right {
   display: flex;
   align-items: center;
+  font-size: 10px;
+  margin-right: 5px;
 }
 #footer_right a:hover {
   border: 1px solid grey;
