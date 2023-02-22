@@ -139,21 +139,44 @@ header nav a:hover {
 
 .cast_entry {
   display: flex;
+  justify-content: center;
   align-items: flex-start;
   font-family: Montserrat;
 }
 
+.cast_left img {
+  width: 100%;
+}
+
+.cast_left {
+  width: 50%;
+  padding: 1rem;
+}
+
 .cast_right {
+  width: 50%;
+  padding: 2rem;
   text-align: justify;
   line-height: 2rem;
-  padding-right: 3rem;
-  padding-top: 5rem;
   color: #75838c;
 }
 
 .cast_right h2 {
   padding-bottom: 1.5rem;
   color: black;
+}
+
+@media screen and (max-width: 780px) {
+  .cast_entry {
+    display: block;
+    margin: 1rem;
+  }
+  .cast_right {
+    width: 100%;
+  }
+  .cast_left {
+    width: 100%;
+  }
 }
 
 /* Cast Table */
