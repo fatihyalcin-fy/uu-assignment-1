@@ -84,6 +84,7 @@ a:active {
   display: flex;
   justify-content: center;
   width: 20%;
+  padding: 2rem;
 }
 
 .logo a img {
