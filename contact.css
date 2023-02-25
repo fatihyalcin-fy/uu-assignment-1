@@ -1,7 +1,16 @@
-body {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Special Elite", cursive;
+  }
+  
+  body {
     background-color: #fafafa;
     font-family: "Special Elite", cursive;
   }
+  
+  /* Header */
   
   .nav-bar {
     justify-content: center;
@@ -17,6 +26,7 @@ body {
     color: #243340;
     display: flex;
     align-items: center;
+    z-index: 20;
   }
   
   header a:active {
@@ -33,24 +43,36 @@ body {
     margin-right: 2rem;
     text-decoration: none;
     color: #75838c;
+    text-decoration: none;
+    background-image: linear-gradient(#724849, #724849);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+  }
+  
+  a:hover,
+  a:focus,
+  a:active {
+    background-size: 100% 0.1em;
+    background-position-x: 0%;
   }
   
   header nav a:hover {
     color: #724849;
-    border-bottom: #724849 solid 3px;
   }
   .action {
     display: inline-block;
     width: 20%;
     background-color: #724849;
     text-align: center;
-    padding: 1.9rem;
+    padding: 2rem;
   }
   
   .action:hover {
     background-color: #75838c;
     color: white;
-    transition: delay(0.5s);
   }
   
   .action a {
@@ -73,12 +95,13 @@ body {
   .navigation {
     width: 50%;
   }
-/* Banner */
-
-.banner {
+  
+  /* Banner */
+  
+  .banner {
     width: 100%;
     height: 25rem;
-    background-image: url("./images/banner.jpg");
+    background-image: url("./assets/images/banner.jpg");
     background-repeat: no-repeat;
     background-position: center;
     margin-top: -2rem;
@@ -101,33 +124,61 @@ body {
     width: 100%;
     height: 25rem;
   }
+
+
   /* Contact_Form */
   #Contact_Form {
+    border: 2px solid white;
+    padding : 1rem;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+  }
+  form{
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-bottom: 20px;
+    width: 50%;
+    border: 2px solid white;
+
   }
   label {
     color: white;
   }
-  input[type=text] {
-    margin-bottom: 15px;
+  input{
+    padding: 3px;
+    font-family: "Special Elite", cursive;
+    display: flex;
+  }
+  input[type=text], input[type=email] {
+    padding-top: 10px;
     background-color: white;
     color: black;
+    width: 50%;
   }
-  input[type=email] {
-   margin-bottom: 15px;
-   background-color: white;
 
+  input::placeholder {
+    padding: 3px;
+    font-family: "Special Elite", cursive;
   }
+    
   input[type=textarea] {
     height: 100px;
-
-
+    width: 50%;
+  }
+  input[type=textarea] ::placeholder {
+    text-align: start;
   }
 
+  /* Text */
+
+  .Text {
+    text-align: center;
+    padding: 5px;
+  }
+
+  
   /* Footer */
   
   footer {
