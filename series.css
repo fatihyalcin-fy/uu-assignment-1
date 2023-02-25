@@ -10,13 +10,13 @@ body {
   font-family: "Special Elite", cursive;
 }
 
-/* Header */
-
+/* navbar */
 .nav-bar {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-top: 3rem;
+  padding-top: 3rem;
+  margin-bottom: -2.5rem;
 }
 
 header {
@@ -26,7 +26,14 @@ header {
   color: #243340;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 20;
+  font-weight: 800;
+}
+
+header a {
+  color: #75838c;
+  text-decoration: none;
 }
 
 header a:active {
@@ -34,16 +41,16 @@ header a:active {
 }
 
 header a:hover {
-  color: #75838c;
+  color: #724849;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 
 header nav a {
-  list-style: none;
-  display: inline-block;
-  margin-right: 2rem;
-  text-decoration: none;
-  color: #75838c;
-  text-decoration: none;
   background-image: linear-gradient(#724849, #724849);
   background-size: 0% 0.1em;
   background-position-y: 100%;
@@ -59,11 +66,7 @@ a:active {
   background-position-x: 0%;
 }
 
-header nav a:hover {
-  color: #724849;
-}
 .action {
-  display: inline-block;
   width: 20%;
   background-color: #724849;
   text-align: center;
@@ -71,8 +74,8 @@ header nav a:hover {
 }
 
 .action:hover {
-  background-color: #75838c;
   color: white;
+  background-color: #75838c;
 }
 
 .action a {
@@ -80,22 +83,22 @@ header nav a:hover {
   text-decoration: none;
 }
 
-.action a:hover {
-  color: white;
-}
-
 .logo {
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  width: 20%;
 }
 
-.logo img {
-  margin-left: 1rem;
+.logo a img {
+  padding: 1rem;
+  width: 100%;
+  min-width: 80px;
 }
 
 .navigation {
-  width: 50%;
+  width: 60%;
+  padding: 10px;
 }
-
 /* Banner */
 
 .banner {
@@ -125,22 +128,12 @@ header nav a:hover {
   height: 25rem;
 }
 
-/* Series Section */
-
-.cast_left img {
-  width: 700px;
-}
-
-.cast_left {
-  padding: 5rem;
-}
-
 /* Description Section */
 .cast_entry {
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  font-family: Montserrat;
 }
 
 .cast_left img {
@@ -163,19 +156,6 @@ header nav a:hover {
 .cast_right h2 {
   padding-bottom: 1.5rem;
   color: black;
-}
-
-@media screen and (max-width: 780px) {
-  .cast_entry {
-    display: block;
-    margin: 1rem;
-  }
-  .cast_right {
-    width: 100%;
-  }
-  .cast_left {
-    width: 100%;
-  }
 }
 
 /* Series Gallery Section */
@@ -225,103 +205,48 @@ footer {
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
-}
-
-#footer_right {
-  display: flex;
-  align-items: center;
-  font-size: 10px;
-  margin-right: 5px;
-}
-#footer_right a:hover {
-  border: 1px solid grey;
-  height: 30px;
-}
-
-#footer_right a:active {
-  border: 1px solid blue;
-}
-
-.developers {
   font-size: 10px;
 }
 
 /* Responsive */
 
-@media screen and (max-width: 600px) {
-  nav {
-    display: block;
-  }
-  .nav-left > a {
-    display: block;
-  }
-
-  .cast_entry {
-    display: block;
-    align-items: flex-start;
-    font-family: Montserrat;
-    padding: 0rem;
-  }
-
-  .cast_left img {
-    width: 350px;
-    padding-top: 2rem;
-    padding-right: 0rem;
-    padding-left: 1.5rem;
-  }
-  .cast_left {
-    padding: 0rem;
-  }
-
-  .cast_right {
-    text-align: justify;
-    line-height: 2rem;
-    padding-right: 1rem;
-    padding-top: 4rem;
-    padding-left: 1rem;
-    color: #75838c;
-  }
-
-  #Galery_Section {
-    background-color: black;
-    display: block;
-    flex-wrap: wrap;
-    gap: 30px;
+@media screen and (max-width: 760px) {
+  .logo a img {
     padding: 0px;
-    justify-content: center;
-    align-items: center;
-    width: auto;
   }
-
-  .nav-bar {
-    margin: 0px;
-  }
-
-  header nav a {
-    font-size: 12px;
-    margin-right: 10px;
-    text-align: center;
-  }
-
   .action {
     display: none;
   }
+  header {
+    justify-content: space-around;
+  }
+  .cast_entry {
+    display: block;
+    margin: 1rem;
+  }
+  .cast_right {
+    width: 100%;
+  }
+  .cast_left {
+    width: 100%;
+  }
+}
 
-  .logo a img {
-    display: flex;
-    width: 100px;
+@media screen and (max-width: 600px) {
+  header nav li {
+    font-size: 12px;
+  }
+  .action {
+    display: none;
+  }
+  #footer_left,
+  #footer_right {
+    display: none;
   }
 
-  .navigation {
-    width: 70%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15px;
-  }
-
-  .logo {
-    width: 30%;
+  .cast_left img {
+    padding-top: 2rem;
   }
 }

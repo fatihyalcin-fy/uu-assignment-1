@@ -84,11 +84,10 @@ a:active {
   display: flex;
   justify-content: center;
   width: 20%;
-  padding: 2rem;
 }
 
 .logo a img {
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   min-width: 80px;
 }
@@ -188,6 +187,9 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
+  .logo a img {
+    padding: 0px;
+  }
   .action {
     display: none;
   }
