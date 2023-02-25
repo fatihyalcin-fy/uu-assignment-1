@@ -88,7 +88,9 @@ a:active {
 }
 
 .logo a img {
+  padding: 2rem;
   width: 100%;
+  min-width: 80px;
 }
 
 .navigation {
