@@ -186,9 +186,6 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
-  .nav-bar {
-    margin: 0px;
-  }
   .action {
     display: none;
   }
