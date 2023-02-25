@@ -84,11 +84,12 @@ a:active {
   display: flex;
   justify-content: center;
   width: 20%;
-  padding: 2rem;
 }
 
 .logo a img {
+  padding: 1rem;
   width: 100%;
+  min-width: 80px;
 }
 
 .navigation {
@@ -186,8 +187,8 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
-  .nav-bar {
-    margin: 0px;
+  .logo a img {
+    padding: 0px;
   }
   .action {
     display: none;
