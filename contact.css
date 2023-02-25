@@ -157,24 +157,8 @@ footer {
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
-}
-
-#footer_right {
-  display: flex;
-  align-items: center;
-}
-#footer_right a:hover {
-  border: 1px solid grey;
-  height: 30px;
-}
-
-#footer_right a:active {
-  border: 1px solid blue;
-}
-
-.developers {
   font-size: 10px;
 }
 
