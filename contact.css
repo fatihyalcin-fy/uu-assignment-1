@@ -136,10 +136,10 @@
     justify-content: center;
   }
   form{
-    padding-top: 20px;
-    padding-left: 220px;
-    padding-bottom: 20px;
-    width: 50%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
     border: 2px solid white;
 
   }
@@ -155,7 +155,7 @@
     padding-top: 10px;
     background-color: white;
     color: black;
-    width: 50%;
+    width: 75%;
   }
 
   input::placeholder {
@@ -165,7 +165,7 @@
     
   input[type=textarea] {
     height: 100px;
-    width: 50%;
+    width: 90%;
   }
   input[type=textarea] ::placeholder {
     text-align: start;
@@ -175,7 +175,7 @@
 
   .Text {
     text-align: center;
-    padding: 5px;
+    padding: 8px;
   }
 
   
