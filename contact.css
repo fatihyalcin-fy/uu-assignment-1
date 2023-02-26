@@ -152,7 +152,7 @@
     display: flex;
   }
   input[type=text], input[type=email] {
-    padding-top: 10px;
+    padding: 5px;
     background-color: white;
     color: black;
     width: 75%;
@@ -163,12 +163,15 @@
     font-family: "Special Elite", cursive;
   }
     
-  input[type=textarea] {
+  textarea {
     height: 100px;
     width: 90%;
+    padding: 6px;
+    font-family: "Special Elite", cursive;
+    
   }
-  input[type=textarea] ::placeholder {
-    text-align: start;
+  textarea::placeholder {
+    padding: 3px;
   }
 
   /* Text */
